@@ -79,7 +79,8 @@ main h2 {
 }
 
 .div-flex-contactme {
-    width: 85px;
+    margin: 0 auto;
+    width: 60px;
 }
 
 .div-icon-studying img,
@@ -87,6 +88,10 @@ main h2 {
 .div-icon-contactme img {
     margin: 0;
     width: 25px;
+}
+
+.div-icon-contactme img {
+    width: 20px;
 }
 
 .div-icon-studying p,
