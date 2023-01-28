@@ -5,144 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Oswald:wght@200;400;700&family=Yellowtail&display=swap" rel="stylesheet">
+    <!----------->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Cleone Antonio Miranda</title>
 </head>
 
-<body style="background-color: #98E8C1;">
+<body>
 
-    <header style="margin: auto;">
-        <table style="margin: auto;" cellspacing="10">
-            <tr>
-                <td><img src="img/cam-profile-pic.jpg" alt="#" style="width: 200px;"></td>
-                <td>
-                    <h1>Cleone Antonio Miranda</h1>
+    <!-- Header -->
+    <header>
 
-                    <p style="color: #3D1A78;"><em>Estudante Front End</em></p>
+        <div class="div-header">
 
-                    <p style="width: 300px;">Eu começei a estudar front-end no fim do ano de 2023. Desde então venho me aprimorando com cursos
-                        internet à fora. Sou paulista, amo cozinhar e ler um bom livro.</p>
-                </td>
+            <img src="img/cam-profile-pic.jpg" alt="#">
 
-            </tr>
+            <div class="text-header">
 
-        </table>
+                <h1>Cleone Antonio Miranda</h1>
+
+                <p><em>Estudante Front End</em></p>
+
+                <p>Eu começei a estudar front-end em dezembro de 2022. No entanto foi este ano(2023) que decidir me aprimorar. Sou paulista, amo cozinhar, escrever e ler uma boa história.</p>
+
+            </div>
+
+        </div>
+
     </header>
 
+    <!-- Main -->
     <main>
-        <hr>
 
-        <h2 style="text-align:center;">Estudo</h2>
+        <!-- Esdudando | Habilidades -->
+        <div class="div-stdskll-main">
 
-        <table style="margin: auto;" cellspacing="10">
-            <!-- <tr>
-                <td>freeCodeCamp</td>
-                <td style="color: #3D1A78;">Cursando</td>
-            </tr> -->
-            <tr>
-                <td>The Complete 2023 Web Development Bootcamp on Udemy by Dr. Angela Yu</td>
-                <td style="color: #3D1A78;">Cursando</td>
+            <!-- Estudando -->
+            <section class="studying">
+                <h2>Estudando</h2>
+    
+                <div class="div-icon-studying">
+                    <img src="img/svg/icon-css3.svg" alt="Logo de CSS preto">
+                    <p>CSS3</p>
+                </div>
+                
+            </section>
+            
+            <!-- Habilidades-->
+            <section class="skills">
+                <h2>Habilidades</h2>
 
-            </tr>
-        </table>
+                <div class="div-icon-skills">
+                    <img src="img/svg/icon-html5.svg" alt="Logo de HTML preto">
+                    <p>HTML5</p>
+                    
+                </div>
+                <div class="div-icon-skills">
+                    <img src="img/svg/icon-github.svg" alt="Logo do Github preto">
+                    <p>Github</p>
+                </div>
+            </section>
+            
+        </div>
 
+        <!-- Contato -->
+        <section class="contactme">
 
+            <h2>Contato</h2>
+            
+            <div class="div-flex-contactme">
+                <div class="div-icon-contactme">
+                    <a href="https://api.whatsapp.com/send?phone=5514998779727" target="_blank">
+                    <img src="img/svg/icon-whatsapp.svg" alt=""></a>
+                    
+                </div>
+                <div class="div-icon-contactme">
+                    <a href="https://www.linkedin.com/in/cleone-antonio-881b81262/" target="_blank"><img src="img/svg/icon-linkedin.svg" alt=""></a>
+                </div>
+                <div class="div-icon-contactme"><a href="https://github.com/cleone-miranda" target="_blank"><img src="img/svg/icon-github.svg" alt=""></a></div>
+            </div>
 
-        <hr>
-
-        <h2 style="text-align: center;">Habilidades</h2>
-        <table style="margin: auto;" cellspacing="10">
-            <tr>
-                <td>HTML5</td>
-                <td style="color: #3D1A78;">★★★✩✩ </td>
-                <td>Node.js</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-
-            <tr>
-                <td>CSS3</td>
-                <td style="color: #3D1A78;">★✩✩✩✩</td>
-                <td>Express.js</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-
-            <tr>
-                <td>Bootstrap 4</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-                <td>Application Program Interfaces (APIs)</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-            <tr>
-                <td>JavaScript ES6</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-                <td>EJS</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-            <tr>
-                <td>Document Object Model (DOM)</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-                <td>Database Fundamentals</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-            <tr>
-                <td>Jquery</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-                <td>SQL Databases</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-            <tr>
-                <td>The Unix Command Line</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-                <td>NOSQL Databases with Mongodb and Mongoose</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-            <tr>
-                <td>Git, Github, and Version Control</td>
-                <td style="color: #3D1A78;">★★✩✩✩</td>
-                <td>Deployment</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-            <tr>
-                <td>Building Restful APIs</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-                <td>Authentication and Security</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-            <tr>
-                <td>React.js</td>
-                <td style="color: #3D1A78;">✩✩✩✩✩</td>
-            </tr>
-        </table>
-
-        <hr>
-
-        <h2 style="text-align:center;">Hobbies</h2>
-        <table style="margin: auto;">
-            <tr>
-                <td>Cooking</td>
-            </tr>
-            <tr>
-                <td>Reading</td>
-            </tr>
-        </table>
-
-        <hr>
-        <h2 style="text-align:center;">Contato</h2>
-
-        <table style="margin: auto;">
-            <tr>
-                <td>WhatsApp:</td>
-                <td style="color: #3D1A78;">(14) 99877-9727</td>
-            </tr>
-            <tr>
-                <td>E-mail:</td>
-                <td style="color: #3D1A78;">cam.timao@gmail.com</td>
-            </tr>
-
-        </table>
-        <!-- <ul>
-            <li>WhatsApp: (14) 99877-9727</li>
-            <li>E-mail: cam.timao@gmail.com</li>
-        </ul> -->
+        </section>
+        
     </main>
 
 </body>
