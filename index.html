@@ -7,91 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Oswald:wght@200;400;700&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Oswald:wght@200;400;700&family=Yellowtail&display=swap"
+        rel="stylesheet">
     <!----------->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
     <title>Cleone Antonio Miranda</title>
 </head>
 
 <body>
+    <!-- header -->
 
-    <!-- Header -->
     <header>
 
-        <div class="div-header">
+        <nav class="menu">
+            <a href="#index.html" class="active"><img src="img/svg/home-svgrepo-com.svg" alt="home-icon"></a>
 
-            <img src="img/cam-profile-pic.jpg" alt="#">
-
-            <div class="text-header">
-
-                <h1>Cleone Antonio Miranda</h1>
-
-                <p><em>Estudante Front End</em></p>
-
-                <p>Eu começei a estudar front-end em dezembro de 2022. No entanto foi este ano(2023) que decidir me aprimorar. Sou paulista, amo cozinhar, escrever e ler uma boa história.</p>
-
+            <div id="myLinks">
+                <a href="#about">Sobre</a>
+                <a href="#skill">Habilidades</a>
+                <a href="#contact">Contato</a>
             </div>
 
-        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="https://www.svgrepo.com/show/493681/hamburger-menu-mobile.svg" alt="hamburger-menu-icon"
+                    class="fa fa-bars">
 
+            </a>
+        </nav>
     </header>
 
-    <!-- Main -->
     <main>
-
-        <!-- Esdudando | Habilidades -->
-        <div class="div-stdskll-main">
-
-            <!-- Estudando -->
-            <section class="studying">
-                <h2>Estudando</h2>
-    
-                <div class="div-icon-studying">
-                    <img src="img/svg/icon-css3.svg" alt="Logo de CSS preto">
-                    <p>CSS3</p>
-                </div>
-                
-            </section>
-            
-            <!-- Habilidades-->
-            <section class="skills">
-                <h2>Habilidades</h2>
-
-                <div class="div-icon-skills">
-                    <img src="img/svg/icon-html5.svg" alt="Logo de HTML preto">
-                    <p>HTML5</p>
-                    
-                </div>
-                <div class="div-icon-skills">
-                    <img src="img/svg/icon-github.svg" alt="Logo do Github preto">
-                    <p>Github</p>
-                </div>
-            </section>
-            
-        </div>
-
-        <!-- Contato -->
-        <section class="contactme">
-
-            <h2>Contato</h2>
-            
-            <div class="div-flex-contactme">
-                <div class="div-icon-contactme">
-                    <a href="https://api.whatsapp.com/send?phone=5514998779727" target="_blank">
-                    <img src="img/svg/icon-whatsapp.svg" alt=""></a>
-                    
-                </div>
-                <div class="div-icon-contactme">
-                    <a href="https://www.linkedin.com/in/cleone-antonio-881b81262/" target="_blank"><img src="img/svg/icon-linkedin.svg" alt=""></a>
-                </div>
-                <div class="div-icon-contactme"><a href="https://github.com/cleone-miranda" target="_blank"><img src="img/svg/icon-github.svg" alt=""></a></div>
-            </div>
+        <section id="about" class="about">
+            <article class="headerabout">
+                <p>Meu nome é</p>
+                <h1>Cleone Antonio Miranda</h1>
+                <p>sou desenvolvedor Front-End.</p>
+            </article>
+            <hr>
+            <article class="bodyabout">
+                <img class="gridleft" src="img/cam-profile-pic.jpg"
+                    alt="Foto de Cleone Antonio Miranda usando um fone de ouvido e sorrindo.">
+                <p class="gridright">Depois de muito tempo tentando me encaixar na sociedade, finalmente encontrei meu lugar. Foi no fim
+                    de 2022 que eu decidir seguir carreira de desenvolvedor e no atual momento, venho buscando me
+                    aprimorar.
+                </p>
+                <p class="gridbottom">Moro no interior de São Paulo, região centro-oeste. Gosto de ler e escrever, além de escutar uma boa
+                    música.</p>
+            </article>
 
         </section>
-        
+
+        <section id="skill" class="skills">
+            <article class="headerskills">
+                <h2>Minhas habilidades</h2>
+            </article>
+            <article class="bodyskills">
+                <div class="html">
+                    <img src="img/svg/icon-html5.svg" alt="Ícone HTML5">
+                    <span>HTML</span>
+                </div>
+                <div class="github">
+                    <img src="img/svg/icon-github.svg" alt="Ícone Github">
+                    <span>Github</span>
+                </div>
+                <div class="css">
+                    <img src="img/svg/icon-css3.svg" alt="Ícone CSS3">
+                    <span>CSS</span>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact" class="contactme">
+            <article class="headercontactme">
+                <h2>Onde me encontrar</h2>
+            </article>
+
+            <article class="bodycontactme">
+                <a href="#"><img src="img/svg/icon-whatsapp.svg" alt="Ícone WhatsApp"></a>
+                <a href="#"><img src="img/svg/icon-linkedin.svg" alt="Ícone Linkedin"></a>
+                <a href=""><img src="img/svg/icon-github.svg" alt="Ícone Github"></a>
+            </article>
+        </section>
     </main>
 
+    <footer>
+        <p>Desenvolvido por Cleone Antonio Miranda</p>
+    </footer>
 </body>
 
 </html>

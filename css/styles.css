@@ -1,202 +1,223 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Oswald';
     margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald';
+}
+
+.menu {
+    align-items: center;
+    background-color: #FDE74C;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.menu #myLinks {
+    display: flex;
+}
+
+.menu a {
+    color: #000;
+    display: block;
+    font-size: 17px;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+.menu a.icon {
+    display: none;
+    position: absolute;
+}
+
+.menu img {
+    width: 30px;
+}
+
+.about {
+    margin: 15px 15px 15px;
+}
+
+.headerabout {
+    border-bottom: 2px solid #FDE74C;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.headerabout h1 {
+    text-align: center;
+}
+
+.headerabout p:last-of-type {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+hr {
+    display: none;
+}
+
+.bodyabout {
+    border-bottom: 2px solid #FDE74C;
+}
+
+.bodyabout img {
+    border: 2px solid #FDE74C;
+    width: 100%;
+}
+
+.bodyabout p {
+    margin: 0 0 5px 0;
+}
+
+.skills {
+    border-bottom: 2px solid #FDE74C;
+    margin: 15px 15px 15px;
+
+
+}
+
+.headerskills {
+    background-color: #FDE74C;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.headerskills h2 {
+    text-align: center;
+}
+
+
+
+.bodyskills {
+    display: block;
+}
+
+.bodyskills img,
+.bodyskills span {
+    margin: 0;
+    width: 25px;
     padding: 0;
 }
 
-body {
-    background-color: #018E71;
-}
-
-/* Header */
-header {
-    /* border-bottom: 1px solid ; */
-    height: 20vh;
-}
-
-.div-header {
+.html,
+.github,
+.css {
     display: flex;
-}
-
-.div-header img {
-    margin: 5px;
-    border-radius: 100%;
-    height: 90px;
-    width: 90px;
-}
-
-.text-header {
-    width: 100%
-}
-
-.text-header h1 {
-    font-size: 1em;
-    font-weight: 700;
-    text-align: left;
-}
-
-.text-header p {
-    font-size: .6em;
-    font-weight: 400;
-    text-align: left;
-}
-
-/* main */
-main h2 {
-    font-size: .99em;
-    text-align: center;
-
-}
-
-.studying {
-    background-color: #27C3A3;
-}
-
-.studying,
-.skills {
-    height: 35vh;
-
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .contactme {
-    background-color: #27C3A3;
-    height: 10vh;
+    margin: 15px 15px 15px;
+
 }
 
-
-.div-icon-studying img {
-    margin: 0;
+.headercontactme {
+    background-color: #FDE74C;
+    border-radius: 5px;
+    width: 90%;
 }
 
-.div-icon-studying,
-.div-icon-skills,
-.div-flex-contactme {
-    align-items: center;
+.headercontactme h2 {
+    text-align: center;
+}
+.bodycontactme {
     display: flex;
     justify-content: center;
-    margin: 5px auto;
 }
 
-.div-flex-contactme {
-    margin: 0 auto;
-    width: 60px;
+.bodycontactme a {
+    margin: 15px 0;
 }
 
-.div-icon-studying img,
-.div-icon-skills img,
-.div-icon-contactme img {
-    margin: 0;
-    width: 25px;
+.bodycontactme img {
+    width: 35px;
+    padding: 0;
 }
 
-.div-icon-contactme img {
-    width: 20px;
+footer {
+    background-color: #FDE74C;
+    padding: 5px;
 }
 
-.div-icon-studying p,
-.div-icon-skills p {
-    font-weight: 400;
-    margin: 0;
+footer * {
+    text-align: center;
 }
 
-
-/* max 600px screen */
 @media screen and (min-width: 600px) {
-    /* All screens */
-body {
-    background-color: #018E71;
-    margin: auto;
-}
+    header {
+        background-color: #FDE74C;
+    }
 
-/* First scroll */
-header {
-    height: 30vh;
-    max-width: 600px;
-}
-
-.div-header {
-    display: flex;
-}
-
-.div-header img {
-    height: 150px;
-    margin: 1%;
-    width: 150px;
-}
-
-.text-header {
-    margin: 1vh 0;
-    width: 70%;
-}
-
-.text-header h1 {
-    font-size: 1.5em;
-    margin: 0 0 1% 0;
-}
-
-.text-header p {
-    font-size: 1em;
-    margin-right: 1%;
-    text-align: justify;
-}
-
-.div-stdskll-main {
-    background-color: #27C3A3;
-    display: flex;
-    justify-content: center;
-    height: 60vh;
+    main {
+        max-width: 600px;
+    }
     
-}
+    .menu {
+        max-width: 300px;
+    }
 
-h2 {
-    text-align: center;
-}
+    .about {
+        margin: 15px 15px 15px;
+    }
+    
+    .headerabout {
+        border-bottom: 0;
+        flex-direction: column;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    
+    .headerabout h1 {
+        text-align: center;
+    }
+    
+    .headerabout p:last-of-type {
+        text-align: right;
+        margin-bottom: 5px;
+    }
 
-.studying,
-.skills {
-    height: 60vh;
-    margin: 0;
-    width: 300px;
-}
+    hr {
+        border: 1px solid #FDE74C;
+        height: 2px;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .bodyabout {
+        border-bottom: 2px solid #FDE74C;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'left right right'
+            'left bottom bottom'
+            'left bottom bottom';
+        display: grid;
+        padding-bottom: 15px;
+    }
 
-.div-icon-studying,
-.div-icon-skills,
-.div-flex-contactme {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    gap: 5px;
-}
+    .gridleft {
+        grid-area: left;
+    }
 
+    .gridright {
+        grid-area: right;
+    }
 
+    .gridbottom {
+        grid-area: bottom;
+    }
 
-.studying .div-icon-studying img,
-.skills .div-icon-skills img,
-.div-icon-contactme img {
-    margin: 0;
-    width: 25px;
-}
-
-.div-flex-contactme {
-    width: 85px;
-    margin: auto;
-
-}
-
-.studying .div-icon-studying p,
-.skills .div-icon-skills p {
-    font-size: 1em;
-    margin: 0;
-    /* width: 50px; */
-}
-
-
-/* Second scroll */
-.contactme {
-    background-color: #018E71;
-
-    height: 10vh;
-}
+    .bodyabout img {
+        border: 2px solid #FDE74C;
+        width: 100%;
+    }
+    
+    .bodyabout p {
+        margin: 0 0 0px 0;
+    }
 }
