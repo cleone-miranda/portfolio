@@ -8,6 +8,14 @@ body {
     font-family: 'Oswald';
 }
 
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
 .menu {
     align-items: center;
     background-color: #FDE74C;
@@ -23,8 +31,8 @@ body {
 .menu a {
     color: #000;
     display: block;
-    font-size: 17px;
-    padding: 5px 16px;
+    font-size: 15px;
+    padding: 5px 5px;
     text-decoration: none;
 }
 
@@ -48,6 +56,7 @@ body {
 }
 
 .headerabout h1 {
+    font-size: 20px;
     text-align: center;
 }
 
@@ -93,7 +102,9 @@ hr {
 
 
 .bodyskills {
-    display: block;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
 }
 
 .bodyskills img,
@@ -125,6 +136,7 @@ hr {
 .headercontactme h2 {
     text-align: center;
 }
+
 .bodycontactme {
     display: flex;
     justify-content: center;
@@ -139,6 +151,114 @@ hr {
     padding: 0;
 }
 
+/* Estudos */
+.headerstudy {
+    background-color: #FDE74C;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    width: 90%;
+}
+
+.bodystudy {
+    border: 2px solid #FDE74C;
+    height: 320px;
+    margin: 15px auto;
+    width: 90%;
+}
+
+.bodystudy div {
+    height: 100%;
+    padding: 50% 0;
+    text-align: center;
+
+}
+
+/* Projeto */
+.projects {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.headerprojects,
+.headerproje-n {
+    background-color: #FDE74C;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    width: 90%;
+}
+
+.bodyprojects {
+    width: 80%;
+}
+
+.headerproje-n {
+    width: 100%;
+}
+
+.bodyproject-n {
+    align-items: center;
+    border: 2px solid #FDE74C;
+    border-radius: 5px;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    margin-top: 7.5px;
+}
+
+.bodyproject-n img,
+.bodyproject-n a {
+    width: 100%;
+    height: 100%;
+}
+
+/* QR code component */
+
+#qr-code {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    width: 375px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 40px;
+    padding: 10px;
+    width: 250px;
+}
+
+#qr-code img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+#qr-code p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+.top {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+}
+
+.bottom {
+    color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+    font-size: 11px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 footer {
     background-color: #FDE74C;
     padding: 5px;
@@ -148,6 +268,7 @@ footer * {
     text-align: center;
 }
 
+
 @media screen and (min-width: 600px) {
     header {
         background-color: #FDE74C;
@@ -156,26 +277,26 @@ footer * {
     main {
         max-width: 600px;
     }
-    
-    .menu {
-        max-width: 300px;
-    }
 
     .about {
-        margin: 15px 15px 15px;
+        margin: 15px;
     }
-    
+
     .headerabout {
         border-bottom: 0;
         flex-direction: column;
         max-width: 300px;
         margin-bottom: 15px;
     }
-    
+
     .headerabout h1 {
         text-align: center;
     }
-    
+
+    .headerabout p {
+        width: 100%;
+    }
+
     .headerabout p:last-of-type {
         text-align: right;
         margin-bottom: 5px;
@@ -187,12 +308,12 @@ footer * {
         display: block;
         margin-bottom: 15px;
     }
-    
+
     .bodyabout {
         border-bottom: 2px solid #FDE74C;
         gap: 5px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             'left right right'
             'left bottom bottom'
             'left bottom bottom';
@@ -216,8 +337,37 @@ footer * {
         border: 2px solid #FDE74C;
         width: 100%;
     }
-    
+
     .bodyabout p {
         margin: 0 0 0px 0;
+    }
+
+    /* project */
+    .bodyprojects {
+
+        width: 300px;
+    }
+
+    /* Estudos */
+    .headerstudy {
+        background-color: #FDE74C;
+        border-radius: 5px;
+        margin-top: 15px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .bodystudy {
+        border: 2px solid #FDE74C;
+        height: 450px;
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    .bodystudy div {
+        height: 100%;
+        padding: 180px 0;
+        text-align: center;
+
     }
 }
